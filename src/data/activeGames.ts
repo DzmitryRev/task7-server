@@ -1,5 +1,5 @@
-import Game from "../Game/Game";
-import SessionData from "./SessionData";
+import Game from "../Game/Game.ts";
+import SessionData from "./SessionData.ts";
 
 class ActiveGames extends SessionData<Game> {
   getItem(gameId: string) {

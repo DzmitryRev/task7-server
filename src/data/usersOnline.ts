@@ -1,4 +1,4 @@
-import SessionData from "./SessionData";
+import SessionData from "./SessionData.ts";
 
 class UsersOnline extends SessionData<string> {
   getItem(username: string) {

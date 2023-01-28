@@ -1,4 +1,4 @@
-import { GameBoardStateType } from "./GameModels";
+import { GameBoardStateType } from "./GameModels.ts";
 
 export const winCombinations = [
   [0, 1, 2],
