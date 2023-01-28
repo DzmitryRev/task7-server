@@ -1,13 +1,13 @@
 import express, { Express } from "express";
 import { Server } from "socket.io";
 import http from "http";
-import Player from "./Player/Player";
-import Game from "./Game/Game";
-import UsersOnline from "./data/usersOnline";
-import ActiveGames from "./data/activeGames";
-import { exceptions } from "./Excepsions/excepsions";
-import { checkWinner } from "./Game/GameLogic";
-import { GameNextMoveType, MarkerType } from "./Game/GameModels";
+import Player from "./Player/Player.ts";
+import Game from "./Game/Game.ts";
+import UsersOnline from "./data/usersOnline.ts";
+import ActiveGames from "./data/activeGames.ts";
+import { exceptions } from "./Excepsions/excepsions.ts";
+import { checkWinner } from "./Game/GameLogic.ts";
+import { GameNextMoveType, MarkerType } from "./Game/GameModels.ts";
 
 const app = express();
 
