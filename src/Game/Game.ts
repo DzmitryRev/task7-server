@@ -1,21 +1,31 @@
 import Player from "../Player/Player";
+import { GameBoardStateType, MarkerType } from "./GameModels";
 
 class Game {
-  owner: Player;
-  opponent: Player | null;
-  move: "owner" | "opponent";
-  result: "owner" | "opponent" | null;
+  gameId: string;
+  playerOne: Player;
+  playerTwo: Player | null;
+  gameBoardState: GameBoardStateType;
+  move: MarkerType;
+  result: MarkerType | null;
 
   constructor(
-    onwer: Player,
+    gameId: string,
+    playerOne: Player,
     opponent: Player | null,
-    move: "owner" | "opponent",
-    result: "owner" | "opponent" | null
+    move: MarkerType,
+    result: MarkerType | null
   ) {
-    this.owner = onwer;
-    this.opponent = opponent;
+    this.gameId = gameId;
+    this.playerOne = playerOne;
+    this.playerTwo = opponent;
     this.move = move;
     this.result = result;
+    this.gameBoardState = [
+      ["", "", ""],
+      ["", "", ""],
+      ["", "", ""],
+    ];
   }
 }
 
