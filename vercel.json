@@ -10,5 +10,7 @@
             "src": "./dist/(.*)",
             "dest": "server.js"
         }
-    ]
+    ],
+    "outputDirectory": "dist",
+    "devCommand": "next dev"
 }
