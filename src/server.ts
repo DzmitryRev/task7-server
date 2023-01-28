@@ -5,7 +5,7 @@ import Player from "./Player/Player";
 import Game from "./Game/Game";
 import UsersOnline from "./data/usersOnline";
 import ActiveGames from "./data/activeGames";
-import { exceptions } from "./Excepsions/excepsions";
+import { exceptions } from "./Excepsions/excepsions.ts";
 import { checkWinner } from "./Game/GameLogic";
 import { GameNextMoveType, MarkerType } from "./Game/GameModels";
 
