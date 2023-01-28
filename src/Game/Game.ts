@@ -1,5 +1,5 @@
-import Player from "../Player/Player.ts";
-import { GameBoardStateType, MarkerType } from "./GameModels.ts";
+import Player from "../Player/Player";
+import { GameBoardStateType, MarkerType } from "./GameModels";
 
 class Game {
   gameId: string;

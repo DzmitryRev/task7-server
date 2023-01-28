@@ -1,4 +1,4 @@
-import { MarkerType } from "../Game/GameModels.ts";
+import { MarkerType } from "../Game/GameModels";
 
 class Player {
   name: string;
